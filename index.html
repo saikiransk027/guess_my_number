@@ -1,20 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >GUESS MY NUMBER..</title>
-</head>
-<body style="background-color: rgb(188, 35, 219);">
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-<div class="container">  <font size="+200">GUESS MY NUMBER..</font> </div>
-     
-<button type="button" >
-     <font size="+2"> AGAIN</font>
-    </button>
-    <input type="number">
-<!-- <h1 class="again">AGAIN</h1> -->
-<!--<style> @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');</style> -->
-</body>
-</html>
+     <!-- <link rel="stylesheet" href="index.js"> -->
+    <title>guess my number</title>
+      
+ </head>
+ <body style="background-color: rgb(128, 125, 156);">
+     <header>
+         
+        <h1>Guess my Number</h1>
+        <p class= " between"> enter between 1 to 20</p>
+    <button class="btn again">AGAIN</button>
+    <div class="number"></div>
+</header>
+<main>
+    <section class=left>
+        <input type="number" class="guess">
+   <button class="btn check">check!</button>
+    </section>
+    <section class="right"> 
+        <p class="msg">start guessing....</p>
+    <p class="label-score">score: <span class="score">20</span></p>
+<p class="label-highscore">
+    highestScore: <span class="highscore">0</span>
+</p>
+
+</section>
+</main>
+<script> src="index.js"</script>
+ </body>
+ </html>
