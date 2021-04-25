@@ -4,6 +4,7 @@
  const number = document.querySelector('.number');
  
  
+
  
  const btnCheck = document.querySelector('.check');
  
@@ -14,7 +15,7 @@ const msg= document.querySelector(.msg)
     const guess =Number( document.querySelector('.guess').value);
    if (guess > 0){
        console.log(` number is ${guess}`);
-       else{
+   else{
            console.log('provide right input');
 
        }
