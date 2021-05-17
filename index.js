@@ -1,3 +1,4 @@
+ //index.js
  'use strict' ;
 
  var secretNumber = math.trunc(Math.random()*20+1);
