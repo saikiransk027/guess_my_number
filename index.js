@@ -34,6 +34,7 @@ document.querySelector('.check-btn').addEventListener('click', function () {
   document.querySelector('.score').textContent = 'Score: ' + score;
 });
 
+<<<<<<< HEAD
 document.querySelector('.again-btn').addEventListener('click', function () {
   score = 20;
   secretNumber = Math.floor(Math.random() * 20 + 1);
@@ -42,3 +43,30 @@ document.querySelector('.again-btn').addEventListener('click', function () {
   document.querySelector('.number').textContent = '?';
   document.querySelector('body').style.backgroundColor = '#CB6D52';
 });
+=======
+const msg= document.querySelector(.msg)
+ btnCheck.addEventListener('click', function(){
+    const guess =Number( document.querySelector('.guess').value);
+   if (guess > 0){
+       console.log(` number is ${guess}`);
+   else{
+           console.log('provide right input');
+
+       }
+       msg.textContent = 'Provide Right Input' ;
+   }
+    // const usrInput = Number(guess.Value);
+   
+    // console.log(usrInput);
+    //  console.log(typeof (usrInput))
+ })
+
+ var myAge=25;
+
+ if (myAge >=18 && <=30){
+        document.write("welcome my bro")
+ }
+ else{
+     document.write("sorry not for you bro..")
+ }
+>>>>>>> 3c801515a65c1690a95e371b6ff0da0de5f55a0c
