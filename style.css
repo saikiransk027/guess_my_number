@@ -1,1 +1,185 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family:  'Spartan', sans-serif;
+  color: #eee;
+  background-color: #CB6D52;
+}
+
+button {
+  background-color: #eee;
+  border: none;
+  font-family: 'Spartan', sans-serif;;
+  font-size: 16px;
+  padding: 20px;
+  margin-left:90%;
+}
+
+hr {
+  margin-top: 10%;
+  height: 0.5em;
+  background-color: #eee;
+}
+
+.title {
+  text-align: center;
+}
+
+.range {
+  font-size: 0.7em;
+  margin-left: 65%;
+  width: 40%;
+}
+
+.number {
+  margin: auto;
+  color: rgb(20, 20, 20, 0.9);
+  font-size: 3em;
+  text-align: center;
+  background-color: #eee;
+  padding: 25px;
+  width: 10%;
+  margin-top: -6%;
+}
+
+.check-btn {
+  text-align: center;
+  margin-top: 1em;
+  margin-left: 45%;
+}
+
+.message {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.score {
+  margin-top: 15%;
+  margin-left: 65%;
+}
+.polo{
+  margin-top: -5%;
+  margin-left: 65%;
+}
+.tolo{
+  margin-top: -10%;
+  margin-left: 65%;
+}
+
+.record {
+  margin-top: 35%;
+  margin-left: 65%;
+}
+
+.again-btn{
+  text-align: center;
+  margin-top: 2em;
+  margin-left: 5%;
+}
+
+.guess-number {
+  text-align: center;
+  margin-top: -5%;
+  margin-left: 44%;
+  height: 1em;
+  width: 2em;
+  font-size: 4em;
+  padding: 0px;
+  background-color: rgba(1, 1, 5, 0.9);
+  color: #eee;
+  font-family: 'Spartan', sans-serif;;
+}
+button{
+    height: 10px;
+    width: 100px;
+    background-color: #e8ebf0;
+    border: 5px solid #202538;
+    position: fixed;
+    cursor: pointer;
+}
+button:after{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #e8ebf0;
+    border: 5px solid #202538;
+    transition: 0.3s;
+}
+
+button:after{
+    content: attr(data-text);
+    color: #202538;
+    font-family: 'Poppins',sans-serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+    display: grid;
+    place-items: center;
+    top: -15px;
+    right: -15px;
+    z-index: 1;
+}
+button:hover:before{
+    bottom: -5px;
+    left: -5px;
+}
+button:hover:after{
+    top: -5px;
+    right: -5px;
+    background-color: #f8f548;
+    color: #03070e;
+}
+
+
+.wrapper{
+    box-sizing: content-box;
+    height: 70px;
+    display:grid;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+
+    margin: auto;
+    color: rgb(20, 20, 20, 0.9);
+    font-size: 3em;
+    text-align: center;
+    background-color: #eee;
+    padding: 25px;
+    width: 20%;
+    margin-top: -6%;
+}
+.words{
+    overflow: hidden;
+}
+.tr{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #BF864D;
+    animation: spin_words 6s infinite;
+}
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}

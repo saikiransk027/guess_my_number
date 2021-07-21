@@ -1,37 +1,64 @@
- <!DOCTYPE html>
- <html lang="en">
-     
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-     <!-- <link rel="stylesheet" href="index.js"> -->
-    <title>guess my number</title>
-      
- </head>
- <body style="background-color: rgb(128, 125, 156);">
-     <header>
-         
-        <h1>Guess my Number</h1>
-        <p class= " between"> enter between 1 to 20</p>
-    <button class="btn again">AGAIN</button>
-    <div class="number"></div>
-</header>
-<main>
-    <section class=left>
-        <input type="number" class="guess">
-   <button class="btn check">check!</button>
-    </section>
-    <section class="right"> 
-        <p class="msg">start guessing....</p>
-    <p class="label-score">score: <span class="score">20</span></p>
-<p class="label-highscore">
-    highestScore: <span class="highscore">0</span>
-</p>
+   
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guess my number Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 
-</section>
-</main>
-<script> src="index.js"</script>
- </body>
- </html>
+  </head>
+  <body >
+    <header>
+        <button data-text="Again!" style="font-family:'Spartan', sans-serif;" class="again-btn"></button>
+        <p class="range">Choose a number between 1 and 20</p>
+        <h1 class="title">Guess my Number Game</h1>
+        <div class="container">
+	
+	
+    <div class="bird-container bird-container--one">
+      <div class="bird bird--one"></div>
+    </div>
+    
+    <div class="bird-container bird-container--two">
+      <div class="bird bird--two"></div>
+    </div>
+    
+    <div class="bird-container bird-container--three">
+      <div class="bird bird--three"></div>
+    </div>
+    
+    <div class="bird-container bird-container--four">
+      <div class="bird bird--four"></div>
+    </div>
+	
+</div>
+        <hr>
+        <div style="display: none;" class="number">?</div>
+   <div class="wrapper">
+       <div class="words">
+           <span class="tr">Hi</span>
+           <span class="tr">வணக்கம்</span>
+           <span class="tr">Hola</span>
+           <span class="tr">こんにちは</span>
+           <span class="tr">salut</span>
+       </div>
+   </div>
+    </header>
+    <div class="stat">
+    </br>
+        <p class="message">Message</p>
+        <img class="polo" src="score.png" alt="django Logo" width="25" height="25"/>
+        <span class="score">Score: 20</span></br></br>
+        <img class="tolo" src="score (1).png" alt="django Logo" width="25" height="25"/>
+        <span class="record">Highest Score:</span></br>
+        <input class="guess-number"type="text"></br>
+        <button data-text="CHECK" style="font-family:'Spartan', sans-serif;" class="check-btn"></button>
+    </div>
+
+    
+  </body>
+  <script src="./script.js"></script>
+</html>
