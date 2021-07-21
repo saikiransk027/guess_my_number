@@ -26,3 +26,12 @@ const msg= document.querySelector(.msg)
     // console.log(usrInput);
     //  console.log(typeof (usrInput))
  })
+
+ var myAge=25;
+
+ if (myAge >=18 && <=30){
+        document.write("welcome my bro")
+ }
+ else{
+     document.write("sorry not for you bro..")
+ }
