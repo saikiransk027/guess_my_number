@@ -2,8 +2,8 @@
 
 body {
   font-family:  'Spartan', sans-serif;
-  color: #eee;
-  background-color: #CB6D52;
+  color: rgb(12, 12, 12);
+  background-color: #023b4d;
 }
 
 button {
@@ -136,7 +136,7 @@ button:hover:after{
     height: 70px;
     display:grid;
     border-radius: 8px;
-    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 25px rgba(43, 75, 2, 0.2);
 
     margin: auto;
     color: rgb(20, 20, 20, 0.9);
@@ -154,7 +154,7 @@ button:hover:after{
     display: block;
     height: 100%;
     padding-left: 10px;
-    color: #BF864D;
+    color: #7914ec;
     animation: spin_words 6s infinite;
 }
 @keyframes spin_words{
